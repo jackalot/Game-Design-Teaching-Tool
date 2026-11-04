@@ -1,3 +1,7 @@
 [gd_scene format=3 uid="uid://b610vwhlf31ki"]
 
+[ext_resource type="PackedScene" uid="uid://e4aswmhnpv5o" path="res://Lesson Assets/Coyote Time/Player/2d_player.tscn" id="1_e6hla"]
+
 [node name="Coyote Time" type="Node2D" unique_id=1663456974]
+
+[node name="2D Player" parent="." unique_id=2025077890 instance=ExtResource("1_e6hla")]
