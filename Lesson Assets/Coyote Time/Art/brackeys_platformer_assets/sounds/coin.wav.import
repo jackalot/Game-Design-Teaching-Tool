@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d0h4hp6c5x0pt"
+path="res://.godot/imported/coin.wav-081afcc11e50c86ac439a141fa0170a6.sample"
+
+[deps]
+
+source_file="res://Lesson Assets/Coyote Time/Art/brackeys_platformer_assets/sounds/coin.wav"
+dest_files=["res://.godot/imported/coin.wav-081afcc11e50c86ac439a141fa0170a6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

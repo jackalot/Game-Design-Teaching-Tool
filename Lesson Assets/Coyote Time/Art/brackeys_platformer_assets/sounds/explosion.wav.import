@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cw0gd3xlklrdp"
+path="res://.godot/imported/explosion.wav-9561e2581f03c85336e70681a20c6100.sample"
+
+[deps]
+
+source_file="res://Lesson Assets/Coyote Time/Art/brackeys_platformer_assets/sounds/explosion.wav"
+dest_files=["res://.godot/imported/explosion.wav-9561e2581f03c85336e70681a20c6100.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
