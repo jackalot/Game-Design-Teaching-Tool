@@ -6,3 +6,5 @@
 script = ExtResource("1_sqrhx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=848270832]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1213668433]
