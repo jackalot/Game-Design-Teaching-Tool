@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://e4aswmhnpv5o"]
+
+[ext_resource type="Script" uid="uid://d2dk3sxvkdl0a" path="res://Lesson Assets/Coyote Time/Player/2d_player.gd" id="1_sqrhx"]
+
+[node name="2D Player" type="CharacterBody2D" unique_id=2025077890]
+script = ExtResource("1_sqrhx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=848270832]
