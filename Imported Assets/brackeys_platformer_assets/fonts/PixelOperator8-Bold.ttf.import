@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://toko152qml5t"
-path="res://.godot/imported/PixelOperator8-Bold.ttf-930c664901c1898c87fc1b48dc65bcab.fontdata"
+path="res://.godot/imported/PixelOperator8-Bold.ttf-878e78e1a486877bd6ee244b58744d0d.fontdata"
 
 [deps]
 
-source_file="res://Lesson Assets/Coyote Time/Art/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf"
-dest_files=["res://.godot/imported/PixelOperator8-Bold.ttf-930c664901c1898c87fc1b48dc65bcab.fontdata"]
+source_file="res://Imported Assets/brackeys_platformer_assets/fonts/PixelOperator8-Bold.ttf"
+dest_files=["res://.godot/imported/PixelOperator8-Bold.ttf-878e78e1a486877bd6ee244b58744d0d.fontdata"]
 
 [params]
 

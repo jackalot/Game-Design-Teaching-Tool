@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://yok1otcebsg8"
-path="res://.godot/imported/knight.png-3a4dc52a0a178e2753617fa5c1c71c78.ctex"
+path="res://.godot/imported/knight.png-254ab8e1b6e667a3e31caee9771934eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Lesson Assets/Coyote Time/Art/brackeys_platformer_assets/sprites/knight.png"
-dest_files=["res://.godot/imported/knight.png-3a4dc52a0a178e2753617fa5c1c71c78.ctex"]
+source_file="res://Imported Assets/brackeys_platformer_assets/sprites/knight.png"
+dest_files=["res://.godot/imported/knight.png-254ab8e1b6e667a3e31caee9771934eb.ctex"]
 
 [params]
 

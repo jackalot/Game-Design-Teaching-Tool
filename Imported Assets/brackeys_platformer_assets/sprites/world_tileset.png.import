@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyn23vf7vuq2x"
-path="res://.godot/imported/platforms.png-684336c859cc212c41caa42439be7907.ctex"
+uid="uid://bo3essyvjp6ld"
+path="res://.godot/imported/world_tileset.png-9dd15cdf4aa8af8250fd4759a20ae8cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Lesson Assets/Coyote Time/Art/brackeys_platformer_assets/sprites/platforms.png"
-dest_files=["res://.godot/imported/platforms.png-684336c859cc212c41caa42439be7907.ctex"]
+source_file="res://Imported Assets/brackeys_platformer_assets/sprites/world_tileset.png"
+dest_files=["res://.godot/imported/world_tileset.png-9dd15cdf4aa8af8250fd4759a20ae8cb.ctex"]
 
 [params]
 

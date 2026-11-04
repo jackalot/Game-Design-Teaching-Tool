@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4en3x1h1yirq"
-path="res://.godot/imported/slime_purple.png-e71a571886d02c0c1885fe5aab9aad71.ctex"
+uid="uid://cyn23vf7vuq2x"
+path="res://.godot/imported/platforms.png-62004bee579400c2b355e2c8b9a98ab9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Lesson Assets/Coyote Time/Art/brackeys_platformer_assets/sprites/slime_purple.png"
-dest_files=["res://.godot/imported/slime_purple.png-e71a571886d02c0c1885fe5aab9aad71.ctex"]
+source_file="res://Imported Assets/brackeys_platformer_assets/sprites/platforms.png"
+dest_files=["res://.godot/imported/platforms.png-62004bee579400c2b355e2c8b9a98ab9.ctex"]
 
 [params]
 

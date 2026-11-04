@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mkbtcobndrgs"
-path="res://.godot/imported/fruit.png-cc394b0d4d4bee394bd87303863e17c5.ctex"
+uid="uid://jrbs7kh55a5l"
+path="res://.godot/imported/coin.png-27147bebef0029a4108856d9c846fa37.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Lesson Assets/Coyote Time/Art/brackeys_platformer_assets/sprites/fruit.png"
-dest_files=["res://.godot/imported/fruit.png-cc394b0d4d4bee394bd87303863e17c5.ctex"]
+source_file="res://Imported Assets/brackeys_platformer_assets/sprites/coin.png"
+dest_files=["res://.godot/imported/coin.png-27147bebef0029a4108856d9c846fa37.ctex"]
 
 [params]
 

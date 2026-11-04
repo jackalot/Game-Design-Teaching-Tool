@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://dr75jnqdclgwm"
-path="res://.godot/imported/tap.wav-1986c58670bc7a3b14a6f2aed13890b9.sample"
+path="res://.godot/imported/tap.wav-d4046cf83bee063e319ba9a64a9f20f5.sample"
 
 [deps]
 
-source_file="res://Lesson Assets/Coyote Time/Art/brackeys_platformer_assets/sounds/tap.wav"
-dest_files=["res://.godot/imported/tap.wav-1986c58670bc7a3b14a6f2aed13890b9.sample"]
+source_file="res://Imported Assets/brackeys_platformer_assets/sounds/tap.wav"
+dest_files=["res://.godot/imported/tap.wav-d4046cf83bee063e319ba9a64a9f20f5.sample"]
 
 [params]
 
