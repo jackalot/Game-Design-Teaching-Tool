@@ -25,14 +25,17 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func MoveHorizontally(velocity):
+	#Move Right
 	if (velocity.x > 0):
 		_animated_sprite.flip_h = false
 		_animated_sprite.play("Run")
-	else: 
+	else:
+		#Move Left 
 		if (velocity.x < 0):
 			_animated_sprite.flip_h = true
 			_animated_sprite.play("Run")
 		else:
+			#Idle
 			if (velocity.x == 0):
 				_animated_sprite.play("Idle")
 	pass
