@@ -26,7 +26,6 @@ func _physics_process(delta: float) -> void:
 			_animated_sprite.play("Run")
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-		print(velocity.x)
 		if (velocity.x == 0):
 			_animated_sprite.play("Idle")
 			pass
