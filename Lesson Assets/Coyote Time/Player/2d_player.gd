@@ -18,15 +18,21 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * SPEED
-		if (velocity.x > 0):
-			_animated_sprite.flip_h = false
-			_animated_sprite.play("Run")
+		MoveHorizontally(velocity)
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+		MoveHorizontally(velocity)
+	move_and_slide()
+
+func MoveHorizontally(velocity):
+	if (velocity.x > 0):
+		_animated_sprite.flip_h = false
+		_animated_sprite.play("Run")
+	else: 
 		if (velocity.x < 0):
 			_animated_sprite.flip_h = true
 			_animated_sprite.play("Run")
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		if (velocity.x == 0):
-			_animated_sprite.play("Idle")
-			pass
-	move_and_slide()
+		else:
+			if (velocity.x == 0):
+				_animated_sprite.play("Idle")
+	pass
