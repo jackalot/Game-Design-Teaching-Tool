@@ -291,7 +291,7 @@ script = ExtResource("1_sqrhx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=848270832]
 sprite_frames = SubResource("SpriteFrames_w465n")
-animation = &"Death"
+animation = &"Roll"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1213668433]
 position = Vector2(0, 2.5)
