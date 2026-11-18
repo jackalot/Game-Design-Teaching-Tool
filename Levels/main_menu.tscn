@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dg4tnpyaqn5xt"]
+
+[ext_resource type="Script" uid="uid://dk6vhq7n7bjk1" path="res://Levels/SceneLoader.gd" id="1_6ucrw"]
+
+[node name="Main Menu" type="Control" unique_id=435262052]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Coyote Time" type="Button" parent="." unique_id=856892063]
+layout_mode = 0
+offset_left = 732.00006
+offset_top = 338.00003
+offset_right = 836.00006
+offset_bottom = 369.00003
+rotation = 0.0216495
+text = "Coyote Time"
+
+[node name="Scene Loader" type="Node" parent="." unique_id=1961889586]
+script = ExtResource("1_6ucrw")
+
+[connection signal="button_down" from="Coyote Time" to="Scene Loader" method="_on_coyote_time_button_down"]
