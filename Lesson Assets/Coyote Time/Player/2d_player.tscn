@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://e4aswmhnpv5o"]
 
-[ext_resource type="Script" uid="uid://d2dk3sxvkdl0a" path="res://Lesson Assets/Coyote Time/Player/2d_player.gd" id="1_sqrhx"]
+[ext_resource type="Script" uid="uid://d2dk3sxvkdl0a" path="res://Lesson Assets/Coyote Time/Scripts/2d_player.gd" id="1_sqrhx"]
 [ext_resource type="Texture2D" uid="uid://yok1otcebsg8" path="res://Imported Assets/brackeys_platformer_assets/sprites/knight.png" id="2_lt0ty"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_neuj7"]
@@ -298,3 +298,5 @@ position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_mfoh6")
 
 [node name="Coyote Timer" type="Timer" parent="." unique_id=1835052231]
+
+[connection signal="timeout" from="Coyote Timer" to="." method="_on_coyote_timer_timeout"]
