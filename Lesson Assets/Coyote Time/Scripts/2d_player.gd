@@ -12,7 +12,11 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_released("Jump"):
 		jump_hold = false
 func _physics_process(delta: float) -> void:
+	#============================================
+	# JUMP MECHANICS AND COYOTE TIME
+	#===========================================
 	if not is_on_floor():
+		#start the timer, give an opportunity to jump
 		_coyote_timer.start()
 		if JumpToHold == true:
 			var holding: bool = Input.is_action_pressed("Jump") and jump_hold
@@ -23,8 +27,6 @@ func _physics_process(delta: float) -> void:
 			velocity.y += get_gravity().y * delta * jump_modifier
 	else:
 		can_jump = true
-	if _coyote_timer.is_stopped():
-		can_jump = false
 	if Input.is_action_just_pressed("Jump"):
 		if(can_jump == true):
 			velocity.y = JUMP_VELOCITY
@@ -57,3 +59,8 @@ func MoveHorizontally(velocity):
 			if (velocity.x == 0):
 				_animated_sprite.play("Idle")
 	pass
+
+
+func _on_coyote_timer_timeout() -> void:
+	can_jump = false
+	print("Coyote Time is done")
