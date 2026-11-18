@@ -288,6 +288,7 @@ size = Vector2(12, 19)
 
 [node name="2D Player" type="CharacterBody2D" unique_id=2025077890]
 script = ExtResource("1_sqrhx")
+JumpToHold = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=848270832]
 sprite_frames = SubResource("SpriteFrames_w465n")
@@ -298,3 +299,4 @@ position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_mfoh6")
 
 [node name="Jump Timer" type="Timer" parent="." unique_id=995695171]
+wait_time = 0.1
