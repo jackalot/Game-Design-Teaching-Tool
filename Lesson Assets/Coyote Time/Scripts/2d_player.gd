@@ -2,12 +2,19 @@ extends CharacterBody2D
 
 #Toggles different features
 @export var JumpToHold = true
+@export var CoyoteTimeEnabled = true
 const SPEED = 300.0
 const JUMP_VELOCITY = -200.0
-@onready var _coyote_timer = $"Coyote Timer"
-@onready var _animated_sprite = $AnimatedSprite2D
+#Child Nodes
+var _coyote_timer
+var _animated_sprite
+# Jump booleans
 var jump_hold = false
 var can_jump = true
+func _onready():
+	_coyote_timer = $"Coyote Timer"
+	_animated_sprite = $AnimatedSprite2D
+	
 func _input(event: InputEvent) -> void:
 	if event.is_action_released("Jump"):
 		jump_hold = false
@@ -17,7 +24,8 @@ func _physics_process(delta: float) -> void:
 	#===========================================
 	if not is_on_floor():
 		#start the timer, give an opportunity to jump
-		_coyote_timer.start()
+		if CoyoteTimeEnabled:
+			_coyote_timer.start()
 		if JumpToHold == true:
 			var holding: bool = Input.is_action_pressed("Jump") and jump_hold
 			var jump_modifier: float = 0.5 if holding else 1.0
