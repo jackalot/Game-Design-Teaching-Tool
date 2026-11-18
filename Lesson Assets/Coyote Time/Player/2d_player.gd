@@ -5,10 +5,9 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -200.0
 @onready var _animated_sprite = $AnimatedSprite2D
-@onready var _jump_timer = $"Jump Timer"
 var jump_hold = false
 func _input(event: InputEvent) -> void:
-	if event.is_action_released("jump"):
+	if event.is_action_released("Jump"):
 		jump_hold = false
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
