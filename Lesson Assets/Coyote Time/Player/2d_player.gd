@@ -4,13 +4,16 @@ extends CharacterBody2D
 @export var JumpToHold = true
 const SPEED = 300.0
 const JUMP_VELOCITY = -200.0
+@onready var _coyote_timer = $"Coyote Timer"
 @onready var _animated_sprite = $AnimatedSprite2D
 var jump_hold = false
+var can_jump = true
 func _input(event: InputEvent) -> void:
 	if event.is_action_released("Jump"):
 		jump_hold = false
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
+		_coyote_timer.start()
 		if JumpToHold == true:
 			var holding: bool = Input.is_action_pressed("Jump") and jump_hold
 			var jump_modifier: float = 0.5 if holding else 1.0
@@ -18,9 +21,15 @@ func _physics_process(delta: float) -> void:
 		else:
 			var jump_modifier = 0.5
 			velocity.y += get_gravity().y * delta * jump_modifier
+	else:
+		can_jump = true
+	if _coyote_timer.is_stopped():
+		can_jump = false
 	if Input.is_action_just_pressed("Jump"):
-		velocity.y = JUMP_VELOCITY
-		jump_hold = true
+		if(can_jump == true):
+			velocity.y = JUMP_VELOCITY
+			jump_hold = true
+			can_jump = false
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("ui_left", "ui_right")
