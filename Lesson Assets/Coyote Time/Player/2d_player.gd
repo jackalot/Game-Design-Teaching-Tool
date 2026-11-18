@@ -32,6 +32,7 @@ func _physics_process(delta: float) -> void:
 		MoveHorizontally(velocity)
 	move_and_slide()
 
+# Handles the Animaitons for movement
 func MoveHorizontally(velocity):
 	#Move Right
 	if (velocity.x > 0):
