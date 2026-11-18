@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-#Toggles
+#Toggles different features
 @export var JumpToHold = true
 const SPEED = 300.0
 const JUMP_VELOCITY = -200.0
