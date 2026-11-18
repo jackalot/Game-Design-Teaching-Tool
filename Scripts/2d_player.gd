@@ -25,7 +25,8 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		#start the timer, give an opportunity to jump
 		if CoyoteTimeEnabled:
-			_coyote_timer.start()
+			if _coyote_timer:
+				_coyote_timer.start()
 		if JumpToHold == true:
 			var holding: bool = Input.is_action_pressed("Jump") and jump_hold
 			var jump_modifier: float = 0.5 if holding else 1.0
