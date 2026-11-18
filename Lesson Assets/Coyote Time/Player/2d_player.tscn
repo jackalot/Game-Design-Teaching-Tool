@@ -296,3 +296,5 @@ animation = &"Roll"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1213668433]
 position = Vector2(0, 2.5)
 shape = SubResource("RectangleShape2D_mfoh6")
+
+[node name="Coyote Timer" type="Timer" parent="." unique_id=1835052231]
