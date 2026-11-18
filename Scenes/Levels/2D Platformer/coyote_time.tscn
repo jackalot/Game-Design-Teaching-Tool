@@ -1,10 +1,10 @@
 [gd_scene format=4 uid="uid://b610vwhlf31ki"]
 
-[ext_resource type="PackedScene" uid="uid://e4aswmhnpv5o" path="res://Lesson Assets/Coyote Time/Player/2d_player.tscn" id="1_e6hla"]
-[ext_resource type="Texture2D" uid="uid://bo3essyvjp6ld" path="res://Imported Assets/brackeys_platformer_assets/sprites/world_tileset.png" id="2_0mvvp"]
+[ext_resource type="PackedScene" uid="uid://e4aswmhnpv5o" path="res://Scenes/2d_player.tscn" id="1_hm8kv"]
+[ext_resource type="Texture2D" uid="uid://bo3essyvjp6ld" path="res://Imported Assets/brackeys_platformer_assets/sprites/world_tileset.png" id="2_4km0c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i2l88"]
-texture = ExtResource("2_0mvvp")
+texture = ExtResource("2_4km0c")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -141,7 +141,7 @@ sources/1 = SubResource("TileSetAtlasSource_i2l88")
 
 [node name="Coyote Time" type="Node2D" unique_id=1663456974]
 
-[node name="2D Player" parent="." unique_id=2025077890 instance=ExtResource("1_e6hla")]
+[node name="2D Player" parent="." unique_id=2025077890 instance=ExtResource("1_hm8kv")]
 
 [node name="Camera2D" type="Camera2D" parent="2D Player" unique_id=116196277]
 zoom = Vector2(4, 4)
