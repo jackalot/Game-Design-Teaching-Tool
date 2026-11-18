@@ -1,19 +1,27 @@
 extends CharacterBody2D
 
-
+#Toggles
+@export var JumpToHold = true
 const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+const JUMP_VELOCITY = -200.0
 @onready var _animated_sprite = $AnimatedSprite2D
 @onready var _jump_timer = $"Jump Timer"
+var jump_hold = false
+func _input(event: InputEvent) -> void:
+	if event.is_action_released("jump"):
+		jump_hold = false
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
 	if not is_on_floor():
-		velocity += get_gravity() * delta
-
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+		if JumpToHold == true:
+			var holding: bool = Input.is_action_pressed("Jump") and jump_hold
+			var jump_modifier: float = 0.5 if holding else 1.0
+			velocity.y += get_gravity().y * delta * jump_modifier
+		else:
+			var jump_modifier = 0.5
+			velocity.y += get_gravity().y * delta * jump_modifier
+	if Input.is_action_just_pressed("Jump"):
 		velocity.y = JUMP_VELOCITY
-
+		jump_hold = true
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("ui_left", "ui_right")
